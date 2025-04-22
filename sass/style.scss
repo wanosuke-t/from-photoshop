@@ -47,6 +47,14 @@ $header-height-pc: 80px;
   }
 }
 
+.section-base {
+  padding-top: 79px;
+
+  @include mq(pc) {
+    padding-top: 118px;
+  }
+}
+
 .inner {
   padding-inline: 20px;
 
@@ -92,6 +100,27 @@ $header-height-pc: 80px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+.button {
+  margin-top: 65px;
+  text-align: center;
+
+  @include mq(pc) {
+    margin-top: 82px;
+  }
+
+  a {
+    display: inline-block;
+    border: 1px solid $color-black;
+    padding: 16px 35px 15px 36px;
+    font-weight: 200;
+    line-height: 1;
+
+    @include mq(pc) {
+      padding: 16px 60px 15px 62px;
+    }
   }
 }
 
@@ -301,11 +330,11 @@ body {
 
 // concept
 .concept {
-  padding-top: 79px;
+  // padding-top: 79px;
 
-  @include mq(pc) {
-    padding-top: 118px;
-  }
+  // @include mq(pc) {
+  //   padding-top: 118px;
+  // }
 }
 
 .concept__inner {
@@ -414,12 +443,12 @@ body {
 
 // works
 .works {
-  padding-top: 79px;
+  // padding-top: 79px;
   position: relative;
 
-  @include mq(pc) {
-    padding-top: 118px;
-  }
+  // @include mq(pc) {
+  //   padding-top: 118px;
+  // }
 
   &::before {
     position: absolute;
@@ -458,7 +487,7 @@ body {
     column-gap: 40px;
     row-gap: 66px;
   }
-  
+
   @include mq(tb) {
     column-gap: 20px;
   }
@@ -531,21 +560,21 @@ body {
 
 .works__button {
   margin-top: 65px;
-  text-align: center;
+  // text-align: center;
 
-  @include mq(pc) {
-    margin-top: 82px;
-  }
+  // @include mq(pc) {
+  //   margin-top: 82px;
+  // }
 
-  a {
-    display: inline-block;
-    border: 1px solid $color-black;
-    padding: 16px 35px 15px 36px;
-    font-weight: 200;
-    line-height: 1;
+  // a {
+  //   display: inline-block;
+  //   border: 1px solid $color-black;
+  //   padding: 16px 35px 15px 36px;
+  //   font-weight: 200;
+  //   line-height: 1;
 
-    @include mq(pc) {
-      padding: 16px 60px 15px 62px;
-    }
-  }
+  //   @include mq(pc) {
+  //     padding: 16px 60px 15px 62px;
+  //   }
+  // }
 }

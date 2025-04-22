@@ -15,6 +15,15 @@
   }
 }
 
+.section-base {
+  padding-top: 79px;
+}
+@media screen and (min-width: 767px) {
+  .section-base {
+    padding-top: 118px;
+  }
+}
+
 .inner {
   padding-inline: 20px;
 }
@@ -64,6 +73,28 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.button {
+  margin-top: 65px;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .button {
+    margin-top: 82px;
+  }
+}
+.button a {
+  display: inline-block;
+  border: 1px solid #333333;
+  padding: 16px 35px 15px 36px;
+  font-weight: 200;
+  line-height: 1;
+}
+@media screen and (min-width: 767px) {
+  .button a {
+    padding: 16px 60px 15px 62px;
+  }
 }
 
 html {
@@ -299,15 +330,6 @@ body {
   }
 }
 
-.concept {
-  padding-top: 79px;
-}
-@media screen and (min-width: 767px) {
-  .concept {
-    padding-top: 118px;
-  }
-}
-
 .concept__inner {
   position: relative;
 }
@@ -418,13 +440,7 @@ body {
 }
 
 .works {
-  padding-top: 79px;
   position: relative;
-}
-@media screen and (min-width: 767px) {
-  .works {
-    padding-top: 118px;
-  }
 }
 .works::before {
   position: absolute;
@@ -533,22 +549,4 @@ body {
 
 .works__button {
   margin-top: 65px;
-  text-align: center;
-}
-@media screen and (min-width: 767px) {
-  .works__button {
-    margin-top: 82px;
-  }
-}
-.works__button a {
-  display: inline-block;
-  border: 1px solid #333333;
-  padding: 16px 35px 15px 36px;
-  font-weight: 200;
-  line-height: 1;
-}
-@media screen and (min-width: 767px) {
-  .works__button a {
-    padding: 16px 60px 15px 62px;
-  }
 }

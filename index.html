@@ -49,7 +49,7 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item"><a href="#concept">コンセプト<span>Concept</span></a></li>
-          <li class="header__item"><a href="">施工実績<span>Works</span></a></li>
+          <li class="header__item"><a href="#works">施工実績<span>Works</span></a></li>
           <li class="header__item"><a href="">お知らせ<span>News</span></a></li>
           <li class="header__item"><a href="">会社概要<span>Company</span></a></li>
           <li class="header__item"><a href="">よくある質問<span>Faq</span></a></li>
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <section class="concept" id="concept">
+  <section class="concept section-base" id="concept">
     <div class="concept__inner">
       <h2 class="heading-ja">コンセプト</h2>
       <p class="heading-en">Concept</p>
@@ -84,10 +84,12 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works section-base" id="works">
     <div class="works__inner inner">
+
       <h2 class="heading-ja">施工実績</h2>
       <p class="heading-en">Works</p>
+
       <ul class="works__list">
 
         <li class="works__item">
@@ -144,10 +146,57 @@
           <div class="works__link"><a href="http://">詳しく見る</a></div>
         </li>
 
-      </ul>
-      <div class="works__button"><a href="">一覧を見る</a></div>
-    </div>
-  </section>
+      </ul><!-- works__list -->
+
+      <div class="works__button button"><a href="">一覧を見る</a></div>
+
+    </div><!-- works__inner -->
+  </section><!-- works -->
+
+  <section class="news section-base">
+    <div class="news__inner inner">
+      <h2 class="heading-ja">お知らせ</h2>
+      <p class="heading-en">News</p>
+
+      <ul class="news__list">
+
+        <li class="news__item">
+          <article class="news__article">
+            <div class="news__meta">
+              <time datetime="2021-07-05">2021.07.05</time>
+              <span class="news__category news__category--news">News</span>
+            </div>
+            <div class="news__title">夏季休業のお知らせ。</div>
+          </article>
+        </li>
+
+        <li class="news__item">
+          <article class="news__article">
+            <div class="news__meta">
+              <time datetime="2021-06-30">2021.06.30</time>
+              <span class="news__category news__category--event">Event</span>
+            </div>
+            <div class="news__title">オンライン見学会開催決定しました。</div>
+          </article>
+        </li>
+
+        <li class="news__item">
+          <article class="news__article">
+            <div class="news__meta">
+              <time datetime="2021-06-25">2021.06.25</time>
+              <span class="news__category news__category--event">Event</span>
+            </div>
+            <div class="news__title">3棟同時現場内覧会開催いたします。<br>｜山形市・天童市・東根市
+            </div>
+          </article>
+        </li>
+
+      </ul><!-- news__list -->
+
+      <div class="works__button button"><a href="">一覧を見る</a></div>
+
+    </div><!-- news__inner -->
+  </section><!-- news -->
 
   <!-- js -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
