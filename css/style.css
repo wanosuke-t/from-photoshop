@@ -557,10 +557,12 @@ body {
 
 .news {
   padding-top: 77px;
+  padding-bottom: 80px;
 }
 @media screen and (min-width: 767px) {
   .news {
     padding-top: 116px;
+    padding-bottom: 120px;
   }
 }
 

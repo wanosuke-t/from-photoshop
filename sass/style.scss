@@ -558,9 +558,11 @@ body {
 // news
 .news {
   padding-top: 77px;
+  padding-bottom: 80px;
 
   @include mq(pc) {
     padding-top: 116px;
+    padding-bottom: 120px;
   }
 }
 
@@ -684,7 +686,7 @@ body {
 
 .news__button {
   margin-top: 20px;
-  
+
   @include mq(pc) {
     margin-top: 38px;
   }
