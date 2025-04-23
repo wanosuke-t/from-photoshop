@@ -691,3 +691,71 @@ body {
     margin-top: 38px;
   }
 }
+
+// contact
+.contact {
+  padding-top: 39px;
+  padding-bottom: 60px;
+  background: $color-sub;
+}
+
+.contact__inner {
+}
+
+.contact__list {
+  margin-top: 21px;
+}
+
+.contact__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.contact__icon {
+  margin-left: 9px;
+  width: 32px;
+  text-align: center;
+}
+
+.contact__text {
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.contact__cta {
+  margin-right: 16px;
+
+  text-align: left;
+  position: relative;
+}
+
+.contact__button {
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    height: 48px;
+    background: $color-main;
+    color: $color-white;
+    font-weight: 200;
+  }
+}
+
+.contact__note {
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+}
