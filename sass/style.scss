@@ -697,13 +697,30 @@ body {
   padding-top: 39px;
   padding-bottom: 60px;
   background: $color-sub;
+
+  @include mq(pc) {
+    padding-top: 116px;
+    padding-bottom: 120px;
+  }
 }
 
 .contact__inner {
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include mq(pc) {
+    max-width: 934px;
+  }
 }
 
 .contact__list {
   margin-top: 21px;
+
+  @include mq(pc) {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contact__item {
@@ -712,10 +729,23 @@ body {
   align-items: center;
   text-align: center;
 
+  @include mq(pc) {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 285px;
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid $color-black;
+
+    @include mq(pc) {
+      margin-bottom: 0;
+      padding-bottom: 25px;
+      border-bottom: none;
+      border-right: 1px solid $color-black;
+    }
   }
 }
 
@@ -723,11 +753,26 @@ body {
   margin-left: 9px;
   width: 32px;
   text-align: center;
+
+  @include mq(pc) {
+    margin-top: 24px;
+    margin-left: -1px;
+  }
 }
 
 .contact__text {
   font-weight: 200;
   line-height: 1.5;
+
+  @include mq(pc) {
+    margin-top: 14px;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+  }
+
+  @include mq(tb) {
+    font-size: 18px;
+  }
 }
 
 .contact__cta {
@@ -735,6 +780,11 @@ body {
 
   text-align: left;
   position: relative;
+
+  @include mq(pc) {
+    margin-right: 0;
+    margin-top: 18px;
+  }
 }
 
 .contact__button {
@@ -747,6 +797,34 @@ body {
     background: $color-main;
     color: $color-white;
     font-weight: 200;
+
+    @include mq(pc) {
+      width: 160px;
+    }
+  }
+
+  &--accent {
+    a {
+      background: $color-accent;
+    }
+  }
+
+  &--tel {
+    @include mq(pc) {
+      display: none;
+    }
+  }
+}
+
+.contact__tel {
+  display: none;
+
+  @include mq(pc) {
+    display: block;
+    margin-left: 12px;
+    font-family: $font-family-en;
+    font-size: 24px;
+    line-height: 1;
   }
 }
 
@@ -758,4 +836,16 @@ body {
   width: 200px;
   text-align: center;
   font-size: 12px;
+
+  @include mq(pc) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    width: auto;
+    line-height: 1;
+    margin-top: 7px;
+    margin-left: -4px;
+  }
 }
