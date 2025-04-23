@@ -549,10 +549,19 @@ body {
 
 .works__button {
   margin-top: 65px;
+
+  @include mq(pc) {
+    margin-top: 82px;
+  }
 }
 
+// news
 .news {
   padding-top: 77px;
+
+  @include mq(pc) {
+    padding-top: 116px;
+  }
 }
 
 .news__inner {
@@ -563,32 +572,97 @@ body {
   display: flex;
   flex-direction: column;
   gap: 23px;
+
+  @include mq(pc) {
+    margin-top: 30px;
+  }
 }
 
 .news__item {
   &:not(:last-of-type) {
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
+
+    @include mq(pc) {
+      padding-bottom: 2px;
+      border-bottom: none;
+    }
   }
 }
 
 .news__article {
+  @include mq(pc) {
+    display: flex;
+    align-items: center;
+    height: 56px;
+  }
 }
 
 .news__meta {
   display: flex;
   gap: 22px;
 
+  @include mq(pc) {
+    gap: 0;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 56px;
+      background: #e5e5e5;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
   time {
     font-family: $font-family-en;
     font-size: 14px;
     line-height: 1;
+
+    @include mq(pc) {
+      text-align: center;
+      width: 153px;
+      font-size: 16px;
+      margin-top: -1px;
+      margin-left: 2px;
+    }
   }
 }
 
 .news__category {
   margin-top: -1px;
   line-height: 1;
+
+  @include mq(pc) {
+    text-align: center;
+    width: 140px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 56px;
+      background: #e5e5e5;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
 
   &--news {
     color: $color-accent;
@@ -600,8 +674,18 @@ body {
   font-weight: 200;
   line-height: 1.5;
   letter-spacing: -0.2px;
+
+  @include mq(pc) {
+    margin-top: -1px;
+    padding-left: 39px;
+    flex-grow: 1;
+  }
 }
 
 .news__button {
   margin-top: 20px;
+  
+  @include mq(pc) {
+    margin-top: 38px;
+  }
 }
