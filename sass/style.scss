@@ -104,7 +104,6 @@ $header-height-pc: 80px;
 }
 
 .button {
-  margin-top: 65px;
   text-align: center;
 
   @include mq(pc) {
@@ -577,4 +576,59 @@ body {
   //     padding: 16px 60px 15px 62px;
   //   }
   // }
+}
+
+.news {
+  padding-top: 77px;
+}
+
+.news__inner {
+}
+
+.news__list {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.news__item {
+  &:not(:last-of-type) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.news__article {
+}
+
+.news__meta {
+  display: flex;
+  gap: 22px;
+
+  time {
+    font-family: $font-family-en;
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+.news__category {
+  margin-top: -1px;
+  line-height: 1;
+
+  &--news {
+    color: $color-accent;
+  }
+}
+
+.news__title {
+  margin-top: 10px;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+.news__button {
+  margin-top: 20px;
 }
