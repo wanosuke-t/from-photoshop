@@ -329,11 +329,6 @@ body {
 
 // concept
 .concept {
-  // padding-top: 79px;
-
-  // @include mq(pc) {
-  //   padding-top: 118px;
-  // }
 }
 
 .concept__inner {
@@ -442,12 +437,7 @@ body {
 
 // works
 .works {
-  // padding-top: 79px;
   position: relative;
-
-  // @include mq(pc) {
-  //   padding-top: 118px;
-  // }
 
   &::before {
     position: absolute;
@@ -559,23 +549,6 @@ body {
 
 .works__button {
   margin-top: 65px;
-  // text-align: center;
-
-  // @include mq(pc) {
-  //   margin-top: 82px;
-  // }
-
-  // a {
-  //   display: inline-block;
-  //   border: 1px solid $color-black;
-  //   padding: 16px 35px 15px 36px;
-  //   font-weight: 200;
-  //   line-height: 1;
-
-  //   @include mq(pc) {
-  //     padding: 16px 60px 15px 62px;
-  //   }
-  // }
 }
 
 .news {
