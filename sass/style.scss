@@ -849,3 +849,113 @@ body {
     margin-left: -4px;
   }
 }
+
+// info
+.info {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background: $color-main;
+  color: $color-white;
+  text-align: center;
+
+  @include mq(pc) {
+    padding-top: 80px;
+    padding-bottom: 115px;
+  }
+}
+
+.info__inner {
+}
+
+.info__logo {
+  img {
+  }
+}
+
+.info__company-name {
+  margin-top: 24px;
+  margin-left: 2px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.info__address-block {
+  margin-top: 16px;
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.info__zipcode {
+  font-weight: 200;
+  line-height: 1;
+}
+
+.info__address {
+  font-weight: 200;
+  line-height: 1;
+}
+
+.info__tel {
+  margin-top: 16px;
+  margin-left: 5px;
+  font-family: $font-family-en;
+  line-height: 1;
+
+  @include mq(pc) {
+    margin-top: 15px;
+    margin-left: 1px;
+  }
+}
+
+.info__mail {
+  margin-top: 15px;
+  font-family: $font-family-en;
+  line-height: 1;
+
+  @include mq(pc) {
+    margin-top: 11px;
+
+  }
+}
+
+.info__nav {
+  margin-top: 32px;
+
+  @include mq(pc) {
+    margin-top: 54px;
+  }
+}
+
+.info__list {
+  @include mq(pc) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.info__item {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-white;
+
+    @include mq(pc) {
+      border-bottom: none;
+      a {
+        border-right: 1px solid $color-white;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 128px;
+    font-weight: 200;
+    line-height: 1;
+    padding-block: 24px;
+
+    @include mq(pc) {
+      padding-block: 0;
+    }
+  }
+}
